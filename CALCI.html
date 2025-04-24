@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="/caci_style" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="tip-calculator-container pb-5">
+        <h1 class="tip-calculator-heading text-center mt-4 mb-4">Tip Calculator</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 mb-4">
+                    <p class="input-label mb-2">BILL AMOUNT</p>
+                    <input type="text" id="billAmount" class="user-input" />
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                    <p class="input-label mb-2">PERCENTAGE TIP</p>
+                    <input type="text" id="percentageTip" class="user-input" />
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                    <p class="input-label mb-2">TIP AMOUNT</p>
+                    <input type="text" id="tipAmount" class="user-input" readonly />
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                    <p class="input-label mb-2">TOTAL</p>
+                    <input type="text" id="totalAmount" class="user-input" readonly />
+                </div>
+                <div class="col-12 text-center mt-4">
+                    <button class="btn btn-info calculate-tip-button" id="calculateButton">CALCULATE</button>
+                    <p id="errorMessage" class="error-message text-center"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js_calci"></script>
+</body>
+</html>
